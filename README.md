@@ -6,7 +6,7 @@ Shell script programmed with gui (graphical user interface) to configure, modify
 
 This script depends on:
 
-Zenity (zenity is default in ubuntu and deribados)
+Zenity (zenity is default in ubuntu and flavors)
 
 Dnsmasq
 
