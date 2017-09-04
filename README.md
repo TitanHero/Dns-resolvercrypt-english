@@ -5,7 +5,7 @@ Shell script programmed with gui (graphical user interface) to configure, modify
 
 
 
-this script auto configures the routing of the dnsmasq server to the dnscrypt-proxy server, so that they are encrypted and proxyfiquen Dns queries, in order to keep our browsing privacy safe, avoiding dns poisonings and / or spying or tracking, as well as increasing our browsing speed and / or saving data, by keeping previous dns queries in cache, avoiding doing New consultations, besides having other utilities and functions.
+this script auto configures the routing of the **dnsmasq server** to the **dnscrypt-proxy server**, so that they are encrypted and proxyfiquen Dns queries, in order to keep our browsing privacy safe, avoiding dns poisonings and / or spying or tracking, as well as increasing our browsing speed and / or saving data, by keeping previous dns queries in cache, avoiding doing New consultations, besides having other utilities and functions.
 
 This script depends on:
 

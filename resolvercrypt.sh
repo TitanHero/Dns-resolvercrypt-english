@@ -1,8 +1,8 @@
-#! /bin/bash
-
-#        Script hecho por TitanHero /\ Script made by Titanhero.
+#!/bin/bash
+#
+#Script hecho por TitanHero /\ Script made by Titanhero.
 #           
-#				     Modify to pleasure, the code...
+#				Modify the code to your pleasure...
 # __  __            __                                                      
 # \ \/ /__  __ __  / /_______ __      __ _____  __ __  _______ ____         
 #  \  / _ \/ // / / __/ __/ // / _   / // / _ \/ // / / __/ _ `/ _ \  _ _ _ 
@@ -75,17 +75,18 @@ rest="Restore dnsmasq default configuration file"
 ver="Check your dns configuration"
 
 #Botamos la ventana de seleccion de opciones
-selec=$(zenity  --title="Dns resolvercrypt"  --width=650 --height=270  --list --column "Script made by TitaHero visit mi github :
-https://github.com/TitanHero" "$de" "$ca" "$masq" "$conf" "$cryptmasq" "$rest" "$ver" "$vrutre")
+selec=$(zenity  --title="Dns resolvercrypt"  --width=650 --height=270  --list --column "The open source move the world... (⋋▂⋌) °°(I❤Gnu/Linux)
+Let's to code... (⊙_◎) <(I need a little bit coffee)   
+ Select an option :" "$de" "$ca" "$masq" "$conf" "$cryptmasq" "$rest" "$ver" "$vrutre")
 
 
 case $selec in
-	"$de" ) dnsconfco=$(grep dns /etc/NetworkManager/NetworkManager.conf); [ $dnsconfco = '#dns=dnsmasq'  ] && sudo sed 's/#dns=dnsmasq/dns=dnsmasq/' /etc/NetworkManager/NetworkManager.conf; sudo service dnsmasq stop; sudo systemctl stop dnscrypt-proxy.socket; sudo systemctl stop dnscrypt-proxy.service; sudo service network-manager restart; zenity --width=200 --height=130 --info --title="Dns resolvercrypt" --text="Default dns configuration completed"; zenity --text-info --width=350 --height=250 --title="This is your file resolv.conf" --filename=/etc/resolv.conf
+	"$de" ) dnsconfco=$(grep dns /etc/NetworkManager/NetworkManager.conf); [ $dnsconfco = '#dns=dnsmasq'  ] && sudo sed 's/#dns=dnsmasq/dns=dnsmasq/' /etc/NetworkManager/NetworkManager.conf; sudo service dnsmasq stop ; sudo systemctl stop dnscrypt-proxy.socket; sudo systemctl stop dnscrypt-proxy.service; sudo service network-manager restart; zenity --width=200 --height=130 --password --info --title="Dns resolvercrypt" --text="Default dns configuration completed"; zenity --text-info --width=350 --height=250 --title="This is your file resolv.conf" --filename=/etc/resolv.conf
 
 		 ;;
 	
 	"$ca" ) 
-			dnss=$(zenity --forms --width=285 --height=200 --title="Cambiar los dns por defecto" --text="Inserta las nuevas direcciones ip de los servers Dns" --add-entry="First address Dns" --add-entry="Second address Dns"); [ $dnss != "|"  ] && nu=$(grep -m 1 -n name /etc/resolv.conf|gawk '{print $1}' FS=":"); sed -i ''${nu}',$d' /etc/resolv.conf && dnsuno=$(echo $dnss|gawk '{print $1}'  FS='|') && dnsdos=$(echo $dnss|gawk '{print $2}'  FS='|'); [ $dnsuno != "" ] && echo "nameserver $dnsuno" >> /etc/resolv.conf; [ $dnsdos != "" ] && echo "nameserver $dnsdos" >> /etc/resolv.conf; zenity --text-info --width=350 --height=250 --title="This is your file resolv.conf" --filename=/etc/resolv.conf
+			dnss=$(zenity --forms --width=285 --height=200 --title="Change the default Dns servers" --text="Add the new ip addres of Dns servers" --add-entry="First address Dns" --add-entry="Second address Dns"); [ $dnss != "|"  ] && nu=$(grep -m 1 -n name /etc/resolv.conf|gawk '{print $1}' FS=":");sudo sed -i ''${nu}'\,$d' /etc/resolv.conf && dnsuno=$(echo $dnss|gawk '{print $1}'  FS='|') && dnsdos=$(echo $dnss|gawk '{print $2}'  FS='|'); [ $dnsuno =! "" ] && sudo cat "nameserver $dnsuno" >> /etc/resolv.conf; [ $dnsdos != "" ] && sudo cat "nameserver $dnsdos" >> /etc/resolv.conf; zenity --text-info --width=350 --height=250 --title="This is your file resolv.conf" --filename=/etc/resolv.conf
 		 ;; 
 	
 	"$masq" ) dnsconfco=$(grep dns /etc/NetworkManager/NetworkManager.conf); [ $dnsconfco = '#dns=dnsmasq'  ] && sudo sed 's/#dns=dnsmasq/dns=dnsmasq/' /etc/NetworkManager/NetworkManager.conf; sudo systemctl stop dnscrypt-proxy.socket; sudo systemctl stop dnscrypt-proxy.service; sudo service dnsmasq restart; diguno=$(dig www.google.com|grep Que|tr -d ";"); digdos=$(dig www.google.com|grep Que|tr -d ";"); zenity --info --width=285 --height=200 --title="Dns resolvercrypt" --text="Calculating query time to check if routing is correct:
@@ -103,7 +104,7 @@ https://github.com/TitanHero"
 	
 	"$conf" ) configlobaldnscrypt=$(zenity --forms --width=285 --height=200 --title="Dns resolvercrypt" --text="Insert the dns proxy server ip to which dnscrypt-proxy is will connected as well as the provider name and server key,
 if you do not have this information on this page you can consult it:
-   																			
+  																			
 https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv
 
 Remember that without this information it is not possible to use dnscrypt-proxy.
@@ -151,7 +152,7 @@ Visit my github account for updates, scripts and programs:
 https://github.com/TitanHero"
 												;;
 
-						 "Use custom configuration") confdnsmasqper=$(zenity --forms --width=285 --height=200 --title="Dns resolvercrypt" --text="Inserta los parametros de configuracion" --add-entry="Listen port of dnscrypt-proxy" --add-entry="Server listen ip dnscrypt-proxy" --add-entry="Ip del servidor dnsmasq"); dnscryptport=$(echo $confdnsmasqper|gawk '{print $1}'  FS='|'); serverdnscrypt=$(echo $confdnsmasqper|gawk '{print $2}'  FS='|'); ladd_dnsmasq=$(echo $confdnsmasqper|gawk '{print $3}'  FS='|');echo  > /etc/dnsmasq.conf;echo  no-resolv >> /etc/dnsmasq.conf; echo "server=$serverdnscrypt#$dnscryptport" >> /etc/dnsmasq.conf; echo "listen-address=$ladd_dnsmasq" >> /etc/dnsmasq.conf;
+						 "Use custom configuration") confdnsmasqper=$(zenity --forms --width=285 --height=200 --title="Dns resolvercrypt" --text="Insert the configuration parameters" --add-entry="Listen port of dnscrypt-proxy" --add-entry="Server listen ip dnscrypt-proxy" --add-entry="Dnsmasq server ip"); dnscryptport=$(echo $confdnsmasqper|gawk '{print $1}'  FS='|'); serverdnscrypt=$(echo $confdnsmasqper|gawk '{print $2}'  FS='|'); ladd_dnsmasq=$(echo $confdnsmasqper|gawk '{print $3}'  FS='|');echo  > /etc/dnsmasq.conf;echo  no-resolv >> /etc/dnsmasq.conf; echo "server=$serverdnscrypt#$dnscryptport" >> /etc/dnsmasq.conf; echo "listen-address=$ladd_dnsmasq" >> /etc/dnsmasq.conf;
 																sudo service $dn restart
 																configlobaldnscrypt=$(zenity --forms --width=285 --height=200 --title="Dns resolvercrypt" --text="Insert the dns proxy server ip to which dnscrypt-proxy will connect as well as the provider name and server key,
 If you do not have this information on this page you can consult it:
@@ -186,7 +187,7 @@ https://github.com/TitanHero"
   "$vrutre") zenity --info --width=330 --height=120 --title="Dns resolvercrypt" --text="Your backup configuration file is in:
 
 $homere/dnsmasq_backup/
-"; zenity --text-info --width=500 --height=400 --title="Backup configuration file dnsmasq.conf" --filename=$home/dnsmasq_backup/dnsmasq.conf
+"; zenity --text-info --width=500 --height=400 --title="Backup configuration file dnsmasq.conf" --filename=$homere/dnsmasq_backup/dnsmasq.conf
 		 ;;
 esac
 
