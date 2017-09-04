@@ -1,12 +1,17 @@
-#!/bin/bash
+#! /bin/bash
 
-#Script hecho por TitanHero /\ Script made by Titanhero.
+#        Script hecho por TitanHero /\ Script made by Titanhero.
+#           
+#				     Modify to pleasure, the code...
+# __  __            __                                                      
+# \ \/ /__  __ __  / /_______ __      __ _____  __ __  _______ ____         
+#  \  / _ \/ // / / __/ __/ // / _   / // / _ \/ // / / __/ _ `/ _ \  _ _ _ 
+#  /_/\___/\_,_/  \__/_/  \_, / ( )  \_, /\___/\_,_/  \__/\_,_/_//_/ (_|_|_)
+#                        /___/  |/  /___/                                   
 
-#    _  __                        _                    
-#   / |/ /__ _  _____ ____  ___ _(_)  _____   __ _____ 
-#  /    / -_) |/ / -_) __/ / _ `/ / |/ / -_) / // / _ \
-# /_/|_/\__/|___/\__/_/    \_, /_/|___/\__/  \_,_/ .__/
-#                         /___/                 /_/ 
+
+
+
 
 
 
@@ -70,7 +75,7 @@ rest="Restore dnsmasq default configuration file"
 ver="Check your dns configuration"
 
 #Botamos la ventana de seleccion de opciones
-selec=$(zenity  --title="Dns resolvercrypt"  --width=650 --height=270  --list --column "Script made by TitaHero visita mi github :
+selec=$(zenity  --title="Dns resolvercrypt"  --width=650 --height=270  --list --column "Script made by TitaHero visit mi github :
 https://github.com/TitanHero" "$de" "$ca" "$masq" "$conf" "$cryptmasq" "$rest" "$ver" "$vrutre")
 
 
@@ -146,7 +151,7 @@ Visit my github account for updates, scripts and programs:
 https://github.com/TitanHero"
 												;;
 
-						 "Use custom configuration") confdnsmasqper=$(zenity --forms --width=285 --height=200 --title="Dns resolvercrypt" --text="Inserta los parametros de configuracion" --add-entry="Puerto escucha de dnscrypt-proxy" --add-entry="Ip escucha del servidor dnscrypt-proxy" --add-entry="Ip del servidor dnsmasq"); dnscryptport=$(echo $confdnsmasqper|gawk '{print $1}'  FS='|'); serverdnscrypt=$(echo $confdnsmasqper|gawk '{print $2}'  FS='|'); ladd_dnsmasq=$(echo $confdnsmasqper|gawk '{print $3}'  FS='|');echo  > /etc/dnsmasq.conf;echo  no-resolv >> /etc/dnsmasq.conf; echo "server=$serverdnscrypt#$dnscryptport" >> /etc/dnsmasq.conf; echo "listen-address=$ladd_dnsmasq" >> /etc/dnsmasq.conf;
+						 "Use custom configuration") confdnsmasqper=$(zenity --forms --width=285 --height=200 --title="Dns resolvercrypt" --text="Inserta los parametros de configuracion" --add-entry="Listen port of dnscrypt-proxy" --add-entry="Server listen ip dnscrypt-proxy" --add-entry="Ip del servidor dnsmasq"); dnscryptport=$(echo $confdnsmasqper|gawk '{print $1}'  FS='|'); serverdnscrypt=$(echo $confdnsmasqper|gawk '{print $2}'  FS='|'); ladd_dnsmasq=$(echo $confdnsmasqper|gawk '{print $3}'  FS='|');echo  > /etc/dnsmasq.conf;echo  no-resolv >> /etc/dnsmasq.conf; echo "server=$serverdnscrypt#$dnscryptport" >> /etc/dnsmasq.conf; echo "listen-address=$ladd_dnsmasq" >> /etc/dnsmasq.conf;
 																sudo service $dn restart
 																configlobaldnscrypt=$(zenity --forms --width=285 --height=200 --title="Dns resolvercrypt" --text="Insert the dns proxy server ip to which dnscrypt-proxy will connect as well as the provider name and server key,
 If you do not have this information on this page you can consult it:
@@ -173,7 +178,7 @@ https://github.com/TitanHero"
 					esac
  				;;
 	
-	"$rest" ) echo ~/dnsmasq_backup/dnsmasq.conf > /etc/dnsmasq.conf; [ $? -eq 0 ] && zenity --text-info --width=500 --height=400 --title="Archivo de configuracion dnsmasq.conf restaurado" --filename=/etc/dnsmasq.conf; [ $? -ne 0 ] && zenity  --error
+	"$rest" ) echo ~/dnsmasq_backup/dnsmasq.conf > /etc/dnsmasq.conf; [ $? -eq 0 ] && zenity --text-info --width=500 --height=400 --title="Config file dnsmasq.conf restore" --filename=/etc/dnsmasq.conf; [ $? -ne 0 ] && zenity  --error
 		 ;;
 	
 	"$ver" )  zenity --text-info --width=350 --height=250 --title="Dns resolvercrypt" --filename=/etc/resolv.conf
@@ -181,7 +186,7 @@ https://github.com/TitanHero"
   "$vrutre") zenity --info --width=330 --height=120 --title="Dns resolvercrypt" --text="Your backup configuration file is in:
 
 $homere/dnsmasq_backup/
-"; zenity --text-info --width=500 --height=400 --title="Backup configuration file dnsmasq.conf" --filename=$homere/dnsmasq_backup/dnsmasq.conf
+"; zenity --text-info --width=500 --height=400 --title="Backup configuration file dnsmasq.conf" --filename=$home/dnsmasq_backup/dnsmasq.conf
 		 ;;
 esac
 
