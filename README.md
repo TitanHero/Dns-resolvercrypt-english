@@ -64,16 +64,16 @@ In order to work encryption and proxy of dns queries it is necessary to have som
 
 This script have 8 basic options, just choose the one you like, and follow the instructions in the script.
 
-### The options
+# The options
 
 
-**Disable dnsmasq and dnscrypt, leave resolv.conf with the default dns of your isp**
+### Disable dnsmasq and dnscrypt, leave resolv.conf with the default dns of your isp:
 
 
 ![screenshot 2](screenshots/dis.png)
 
 
-**Check the path of your backup of the dnsmasq.conf file**
+### Check the path of your backup of the dnsmasq.conf file:
 
 
 ![screenshot 3](screenshots/che.png)
@@ -83,7 +83,7 @@ This script have 8 basic options, just choose the one you like, and follow the i
 ![screenshot 5](screenshots/she3.png)
 
 
-**Change the default dns of your isp in resolv.conf by custom**
+#### Change the default dns of your isp in resolv.conf by custom:
 
 
 ![screenshot 6](screenshots/7.png)
@@ -91,7 +91,7 @@ This script have 8 basic options, just choose the one you like, and follow the i
 ![screenshot 7](screenshots/8.png)
 
 
-**Use only dnsmasq**
+### Use only dnsmasq:
 
 
 ![screenshot 8](screenshots/9.png)
@@ -101,7 +101,7 @@ This script have 8 basic options, just choose the one you like, and follow the i
 ![screenshot 10](screenshots/11.png)
 
 
-**Modify configuration dnscrypt dns servers**
+### Modify configuration dnscrypt dns servers:
 
 
 ![screenshot 11](screenshots/12.png)
@@ -109,7 +109,7 @@ This script have 8 basic options, just choose the one you like, and follow the i
 ![screenshot 12](screenshots/13.png)
 
 
-**Use dnsmasq and dnscrypt**
+### Use dnsmasq and dnscrypt
 
 
 ![screenshot 13](screenshots/16.png)
@@ -117,13 +117,13 @@ This script have 8 basic options, just choose the one you like, and follow the i
 ![screenshot 14](screenshots/17.png)
 
 
-**Restore dnsmasq default configuration file**
+### Restore dnsmasq default configuration file
 
 
 ![screenshot 15](screenshots/18.png)
 
 
-**Check your dns configuration**
+### Check your dns configuration
 
 ![screenshot 16](screenshots/19.png)
 
@@ -133,6 +133,6 @@ This script have 8 basic options, just choose the one you like, and follow the i
 
 
 
-### License
+## License
 
 **GNU Affero General Public License v3.0**
