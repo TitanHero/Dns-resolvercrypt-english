@@ -80,7 +80,7 @@ This script have 8 basic options, just choose the one you like, and follow the i
 
 ![screenshot 4](screenshots/che2.png)
 
-![screenshot 5](screenshots/che3.png)
+![screenshot 5](screenshots/she3.png)
 
 
 **Change the default dns of your isp in resolv.conf by custom**
