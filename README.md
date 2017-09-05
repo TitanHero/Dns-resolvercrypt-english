@@ -1,6 +1,5 @@
 # Dns-resolvercrypt-english
 
-![License]https://img.shields.io/cran/l/devtools.svg
 
 
 Shell script programmed with gui (graphical user interface) to configure, modify, revise and route [dnsmasq](https://wiki.debian.org/HowTo/dnsmasq), [dnscrypt-proxy](https://www.dnscrypt.org/) and **resolv.conf** (see man page resolv.conf).
@@ -60,3 +59,12 @@ In order to work encryption and proxy of dns queries it is necessary to have som
 ### By recommendation
 
 `Before choosing a server is make ping queries to the server to verify the latency of response, this way we can choose the server that has less response time and consequently have faster dns queries.`
+
+### How to use:
+
+
+
+
+### License
+
+***GNU Affero General Public License v3.0*
