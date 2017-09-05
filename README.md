@@ -62,9 +62,31 @@ In order to work encryption and proxy of dns queries it is necessary to have som
 
 ### How to use:
 
+This script have 8 basic options, just choose the one you like, and follow the instructions in the script.
+
+**The options**
+
+```
+"Disable dnsmasq and dnscrypt, leave resolv.conf with the default dns of your isp"
+
+"Check the path of your backup of the dnsmasq.conf file"
+
+"Change the default dns of your isp in resolv.conf by custom"
+
+"Use only dnsmasq"
+
+"Modify configuration dnscrypt dns servers"
+
+"Use dnsmasq and dnscrypt"
+
+"Restore dnsmasq default configuration file"
+
+"Check your dns configuration"
+
+```
 
 
 
 ### License
 
-***GNU Affero General Public License v3.0*
+**GNU Affero General Public License v3.0**
