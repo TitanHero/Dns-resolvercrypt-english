@@ -1,21 +1,21 @@
 ### Dns-resolvercrypt-english
 
 Shell script programmed with gui (graphical user interface) to configure, modify, revise and route [dnsmasq](https://wiki.debian.org/HowTo/dnsmasq), [dnscrypt-proxy](https://www.dnscrypt.org/) and **resolv.conf** (see man page resolv.conf).
-[screnshot 1](screenshots/4.png)
+![screnshot 1](screenshots/4.png)
 
 
 
 This script auto configures the routing of the **dnsmasq server** to the **dnscrypt-proxy server**, so that they are encrypted and proxyfied the Dns queries, in order to keep our browsing privacy safe, avoiding dns poisonings and\/or spying or tracking, as well as increasing our browsing speed and\/or saving data, by keeping previous dns queries in cache, avoiding doing new consultations, besides having other utilities and functions.
-[gif](screenshots/dnscrypt.gif)
+![screenshotgif](screenshots/dnscrypt.gif)
 
 This script depends on:
 
 ```
-**Zenity** (zenity is default in ubuntu and flavors)
+Zenity (zenity is default in ubuntu and flavors)
 
-**Dnsmasq**
+Dnsmasq
 
-**Dnscrypt-proxy**
+Dnscrypt-proxy
 ```
 
 ### To install it them we copy this command in terminal (console of commands) and we execute it:
