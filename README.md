@@ -1,8 +1,6 @@
 # Dns-resolvercrypt-english
 
-=
-
-[![License]https://img.shields.io/cran/l/devtools.svg](LICENSE)
+![License]https://img.shields.io/cran/l/devtools.svg
 
 
 Shell script programmed with gui (graphical user interface) to configure, modify, revise and route [dnsmasq](https://wiki.debian.org/HowTo/dnsmasq), [dnscrypt-proxy](https://www.dnscrypt.org/) and **resolv.conf** (see man page resolv.conf).
