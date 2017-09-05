@@ -64,16 +64,41 @@ In order to work encryption and proxy of dns queries it is necessary to have som
 
 This script have 8 basic options, just choose the one you like, and follow the instructions in the script.
 
-**The options**
+### The options
 
-```
-"Disable dnsmasq and dnscrypt, leave resolv.conf with the default dns of your isp"
 
-"Check the path of your backup of the dnsmasq.conf file"
+**Disable dnsmasq and dnscrypt, leave resolv.conf with the default dns of your isp**
 
-"Change the default dns of your isp in resolv.conf by custom"
 
-"Use only dnsmasq"
+![screenshot 2](screenshots/dis.png)
+
+
+
+
+
+
+**Check the path of your backup of the dnsmasq.conf file**
+
+![screenshot 3](screenshots/che.png)
+
+![screenshot 4](screenshots/che2.png)
+
+![screenshot 5](screenshots/che3.png)
+
+
+**Change the default dns of your isp in resolv.conf by custom**
+
+![screenshot 6](screenshots/7.png)
+
+![screenshot 7](screenshots/8.png)
+
+**Use only dnsmasq**
+
+![screenshot 8](screenshots/9.png)
+
+![screenshot 9](screenshots/10.png)
+
+![screenshot 10](screenshots/11.png)
 
 "Modify configuration dnscrypt dns servers"
 
@@ -83,7 +108,7 @@ This script have 8 basic options, just choose the one you like, and follow the i
 
 "Check your dns configuration"
 
-```
+
 
 
 
