@@ -73,11 +73,8 @@ This script have 8 basic options, just choose the one you like, and follow the i
 ![screenshot 2](screenshots/dis.png)
 
 
-
-
-
-
 **Check the path of your backup of the dnsmasq.conf file**
+
 
 ![screenshot 3](screenshots/che.png)
 
@@ -88,11 +85,14 @@ This script have 8 basic options, just choose the one you like, and follow the i
 
 **Change the default dns of your isp in resolv.conf by custom**
 
+
 ![screenshot 6](screenshots/7.png)
 
 ![screenshot 7](screenshots/8.png)
 
+
 **Use only dnsmasq**
+
 
 ![screenshot 8](screenshots/9.png)
 
@@ -100,13 +100,34 @@ This script have 8 basic options, just choose the one you like, and follow the i
 
 ![screenshot 10](screenshots/11.png)
 
-"Modify configuration dnscrypt dns servers"
 
-"Use dnsmasq and dnscrypt"
+**Modify configuration dnscrypt dns servers**
 
-"Restore dnsmasq default configuration file"
 
-"Check your dns configuration"
+![screenshot 11](screenshots/12.png)
+
+![screenshot 12](screenshots/13.png)
+
+
+**Use dnsmasq and dnscrypt**
+
+
+![screenshot 13](screenshots/16.png)
+
+![screenshot 14](screenshots/17.png)
+
+
+**Restore dnsmasq default configuration file**
+
+
+![screenshot 15](screenshots/18.png)
+
+
+**Check your dns configuration**
+
+![screenshot 16](screenshots/19.png)
+
+![screenshot 17](screenshots/21.png)
 
 
 
