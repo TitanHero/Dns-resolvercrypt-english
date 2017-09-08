@@ -135,4 +135,4 @@ This script have 8 basic options, just choose the one you like, and follow the i
 
 ## License
 
-**GNU Affero General Public License v3.0**
+[**GNU Affero General Public License v3.0**](LICENSE)
