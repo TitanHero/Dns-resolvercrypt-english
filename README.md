@@ -1,4 +1,5 @@
-## :warning: Important this proyect was moved to [Gitlab](https://gitlab.com) here's only the README if you want to clone the repo follow the next link: https://gitlab.com/TitanHero/Dns-resolvercrypt
+## :warning: Important :warning:
+### This proyect was moved to [Gitlab](https://gitlab.com) here's only the README if you want to clone the repo follow the next link: https://gitlab.com/TitanHero/Dns-resolvercrypt
 
 # Dns-resolvercrypt-english
 
