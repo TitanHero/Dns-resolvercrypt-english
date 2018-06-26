@@ -1,4 +1,4 @@
-##:warning: Importan :warning: ### this proyect was moved to Gitlab here's only the README if you want to clone the repo follow the next link:
+## :warning: Importan :warning: ### this proyect was moved to Gitlab here's only the README if you want to clone the repo follow the next link:
 
 # Dns-resolvercrypt-english
 
